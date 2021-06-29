@@ -102,13 +102,13 @@
 <span class="co">####################################</span>
 <span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/Exponential.html">rexp</a></span><span class="op">(</span><span class="fl">1000</span>,<span class="fl">0.000000000005</span><span class="op">)</span>
 <span class="fl">1</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
-<span class="co">#&gt; [1] 5.019239e-12</span>
+<span class="co">#&gt; [1] 4.823063e-12</span>
 <span class="fu"><a href="reference/sigmaalphaLREP.html">sigmaalphaLREP</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">10</span><span class="op">^</span><span class="op">-</span><span class="fl">12</span><span class="op">)</span>
-<span class="co">#&gt;        s.hat      a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 2899527 0.09519148              0</span>
+<span class="co">#&gt;        s.hat     a.hat log.like.ratio</span>
+<span class="co">#&gt; [1,] 6990239 0.1031311              0</span>
 <span class="fu"><a href="reference/expparetotest.html">expparetotest</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">0.05</span><span class="op">)</span>
-<span class="co">#&gt;        s.hat      a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 2899527 0.09519148              0</span>
+<span class="co">#&gt;        s.hat     a.hat log.like.ratio</span>
+<span class="co">#&gt; [1,] 6990239 0.1031311              0</span>
 <span class="co">#&gt; Critical value: 2.446109 </span>
 <span class="co">#&gt; Deviance statistic: 0 </span>
 <span class="co">#&gt; Data is comming from an exponential distribution</span>
@@ -117,13 +117,13 @@
 <span class="co">#&gt; [1] 0.5</span>
 <span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/Exponential.html">rexp</a></span><span class="op">(</span><span class="fl">1000</span>,<span class="fl">0.1</span><span class="op">)</span>
 <span class="fl">1</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.1028158</span>
+<span class="co">#&gt; [1] 0.09671586</span>
 <span class="fu"><a href="reference/sigmaalphaLREP.html">sigmaalphaLREP</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">10</span><span class="op">^</span><span class="op">-</span><span class="fl">12</span><span class="op">)</span>
 <span class="co">#&gt;         s.hat    a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 14194.11 1460.378              0</span>
+<span class="co">#&gt; [1,] 12495.04 1209.401              0</span>
 <span class="fu"><a href="reference/expparetotest.html">expparetotest</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">0.05</span><span class="op">)</span>
 <span class="co">#&gt;         s.hat    a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 14194.11 1460.378              0</span>
+<span class="co">#&gt; [1,] 12495.04 1209.401              0</span>
 <span class="co">#&gt; Critical value: 2.446109 </span>
 <span class="co">#&gt; Deviance statistic: 0 </span>
 <span class="co">#&gt; Data is comming from an exponential distribution</span>
@@ -140,13 +140,13 @@
 <span class="op">}</span>
 <span class="va">x</span><span class="op">&lt;-</span><span class="fu">pareto.generation</span><span class="op">(</span><span class="fl">10</span>,<span class="fl">7</span>,<span class="fl">1000</span><span class="op">)</span>
 <span class="fu"><a href="reference/sigmaalphaLREP.html">sigmaalphaLREP</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">10</span><span class="op">^</span><span class="op">-</span><span class="fl">12</span><span class="op">)</span>
-<span class="co">#&gt;         s.hat   a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 8.278424 6.00144       38.21259</span>
+<span class="co">#&gt;         s.hat    a.hat log.like.ratio</span>
+<span class="co">#&gt; [1,] 7.907241 5.538718       35.65127</span>
 <span class="fu"><a href="reference/expparetotest.html">expparetotest</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">0.05</span><span class="op">)</span>
-<span class="co">#&gt;         s.hat   a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 8.278424 6.00144       38.21259</span>
+<span class="co">#&gt;         s.hat    a.hat log.like.ratio</span>
+<span class="co">#&gt; [1,] 7.907241 5.538718       35.65127</span>
 <span class="co">#&gt; Critical value: 2.446109 </span>
-<span class="co">#&gt; Deviance statistic: 38.21259 </span>
+<span class="co">#&gt; Deviance statistic: 35.65127 </span>
 <span class="co">#&gt; Data is comming from Pareto distribution</span>
 <span class="co">##asymptotic p-value</span>
 <span class="fl">1</span><span class="op">/</span><span class="fl">2</span><span class="op">*</span><span class="op">(</span><span class="fl">1</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/stats/Chisquare.html">pchisq</a></span><span class="op">(</span><span class="fl">14.43144</span>,df<span class="op">=</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span>
@@ -176,6 +176,7 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/jiqiaingwu/LREP/actions"><img src="https://github.com/jiqiaingwu/LREP/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://travis-ci.com/jiqiaingwu/LREP"><img src="https://travis-ci.com/jiqiaingwu/LREP.svg?branch=main" alt="Travis build status"></a></li>
 </ul>
 </div>
 </div>
