@@ -1,0 +1,21 @@
+Package: LREP
+Type: Package
+Title: Estimation of Parameters for the Pareto Distribution and Testing Pareto vs. Exponential Distributions
+Version: 0.1.0
+Authors@R: c(
+        person("Fares", "Qeadan", email = "fares.qeadan@utah.edu",
+                  role = "aut"),
+        person("Jiqiang", "Wu", email = "charles.wu@utah.edu",
+                  role = c("aut", "cre")),
+        person("Tomasz", "Kozubowski", email = "tkozubow@unr.edu",
+                  role = "aut"),
+        person("Anna", "Panorska", email = "ania@unr.edu",
+                  role = "aut")
+        )
+Maintainer: Jiqiang Wu <charles.wu@utah.edu>
+Description: The programs was developed for estimation of parameters and testing Pareto versus exponential distribution during our work on hydrologic extremes. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: TRUE
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.1.1
