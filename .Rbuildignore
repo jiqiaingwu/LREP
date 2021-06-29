@@ -3,3 +3,4 @@
 ^README\.Rmd$
 ^NEWS\.md$
 ^\.github$
+^\.travis\.yml$
