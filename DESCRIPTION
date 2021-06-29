@@ -17,5 +17,5 @@ Description: The programs was developed for estimation of parameters and testing
 License: GPL-3
 Encoding: UTF-8
 LazyData: TRUE
-Depends: R (>= 4.1.0)
+Depends: R (>= 4.0.0)
 RoxygenNote: 7.1.1
