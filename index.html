@@ -102,13 +102,13 @@
 <span class="co">####################################</span>
 <span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/Exponential.html">rexp</a></span><span class="op">(</span><span class="fl">1000</span>,<span class="fl">0.000000000005</span><span class="op">)</span>
 <span class="fl">1</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
-<span class="co">#&gt; [1] 5.110435e-12</span>
+<span class="co">#&gt; [1] 5.019239e-12</span>
 <span class="fu"><a href="reference/sigmaalphaLREP.html">sigmaalphaLREP</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">10</span><span class="op">^</span><span class="op">-</span><span class="fl">12</span><span class="op">)</span>
-<span class="co">#&gt;         s.hat     a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 32117491 0.1232811              0</span>
+<span class="co">#&gt;        s.hat      a.hat log.like.ratio</span>
+<span class="co">#&gt; [1,] 2899527 0.09519148              0</span>
 <span class="fu"><a href="reference/expparetotest.html">expparetotest</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">0.05</span><span class="op">)</span>
-<span class="co">#&gt;         s.hat     a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 32117491 0.1232811              0</span>
+<span class="co">#&gt;        s.hat      a.hat log.like.ratio</span>
+<span class="co">#&gt; [1,] 2899527 0.09519148              0</span>
 <span class="co">#&gt; Critical value: 2.446109 </span>
 <span class="co">#&gt; Deviance statistic: 0 </span>
 <span class="co">#&gt; Data is comming from an exponential distribution</span>
@@ -117,15 +117,15 @@
 <span class="co">#&gt; [1] 0.5</span>
 <span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/stats/Exponential.html">rexp</a></span><span class="op">(</span><span class="fl">1000</span>,<span class="fl">0.1</span><span class="op">)</span>
 <span class="fl">1</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
-<span class="co">#&gt; [1] 0.0998123</span>
+<span class="co">#&gt; [1] 0.1028158</span>
 <span class="fu"><a href="reference/sigmaalphaLREP.html">sigmaalphaLREP</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">10</span><span class="op">^</span><span class="op">-</span><span class="fl">12</span><span class="op">)</span>
 <span class="co">#&gt;         s.hat    a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 11260.69 1124.955   0.0008769159</span>
+<span class="co">#&gt; [1,] 14194.11 1460.378              0</span>
 <span class="fu"><a href="reference/expparetotest.html">expparetotest</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">0.05</span><span class="op">)</span>
 <span class="co">#&gt;         s.hat    a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 11260.69 1124.955   0.0008769159</span>
+<span class="co">#&gt; [1,] 14194.11 1460.378              0</span>
 <span class="co">#&gt; Critical value: 2.446109 </span>
-<span class="co">#&gt; Deviance statistic: 0.0008769159 </span>
+<span class="co">#&gt; Deviance statistic: 0 </span>
 <span class="co">#&gt; Data is comming from an exponential distribution</span>
 <span class="co">##asymptotic p-value</span>
 <span class="fl">1</span><span class="op">/</span><span class="fl">2</span><span class="op">*</span><span class="op">(</span><span class="fl">1</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/stats/Chisquare.html">pchisq</a></span><span class="op">(</span><span class="fl">1.596044</span>,df<span class="op">=</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span>
@@ -140,13 +140,13 @@
 <span class="op">}</span>
 <span class="va">x</span><span class="op">&lt;-</span><span class="fu">pareto.generation</span><span class="op">(</span><span class="fl">10</span>,<span class="fl">7</span>,<span class="fl">1000</span><span class="op">)</span>
 <span class="fu"><a href="reference/sigmaalphaLREP.html">sigmaalphaLREP</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">10</span><span class="op">^</span><span class="op">-</span><span class="fl">12</span><span class="op">)</span>
-<span class="co">#&gt;         s.hat  a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 14.23286 8.5751       13.76893</span>
+<span class="co">#&gt;         s.hat   a.hat log.like.ratio</span>
+<span class="co">#&gt; [1,] 8.278424 6.00144       38.21259</span>
 <span class="fu"><a href="reference/expparetotest.html">expparetotest</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">0.05</span><span class="op">)</span>
-<span class="co">#&gt;         s.hat  a.hat log.like.ratio</span>
-<span class="co">#&gt; [1,] 14.23286 8.5751       13.76893</span>
+<span class="co">#&gt;         s.hat   a.hat log.like.ratio</span>
+<span class="co">#&gt; [1,] 8.278424 6.00144       38.21259</span>
 <span class="co">#&gt; Critical value: 2.446109 </span>
-<span class="co">#&gt; Deviance statistic: 13.76893 </span>
+<span class="co">#&gt; Deviance statistic: 38.21259 </span>
 <span class="co">#&gt; Data is comming from Pareto distribution</span>
 <span class="co">##asymptotic p-value</span>
 <span class="fl">1</span><span class="op">/</span><span class="fl">2</span><span class="op">*</span><span class="op">(</span><span class="fl">1</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/stats/Chisquare.html">pchisq</a></span><span class="op">(</span><span class="fl">14.43144</span>,df<span class="op">=</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span>
@@ -176,7 +176,6 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/jiqiaingwu/LREP/actions"><img src="https://github.com/jiqiaingwu/LREP/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://travis-ci.org/jiqiaingwu/LREP"><img src="https://travis-ci.org/jiqiaingwu/LREP.svg?branch=main" alt="Build Status"></a></li>
 </ul>
 </div>
 </div>
