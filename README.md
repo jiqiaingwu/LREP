@@ -4,6 +4,8 @@
 # LREP
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/jiqiaingwu/LREP/workflows/R-CMD-check/badge.svg)](https://github.com/jiqiaingwu/LREP/actions)
 <!-- badges: end -->
 
 The goal of LREP is to estimate the Parameters for the Pareto
@@ -88,13 +90,13 @@ library(LREP)
 ####################################
 x<-rexp(1000,0.000000000005)
 1/mean(x)
-#> [1] 5.244254e-12
+#> [1] 5.209207e-12
 sigmaalphaLREP(x,10^-12)
 #>         s.hat     a.hat log.like.ratio
-#> [1,] 17535662 0.1148668              0
+#> [1,] 52142664 0.1313118              0
 expparetotest(x,0.05)
 #>         s.hat     a.hat log.like.ratio
-#> [1,] 17535662 0.1148668              0
+#> [1,] 52142664 0.1313118              0
 #> Critical value: 2.446109 
 #> Deviance statistic: 0 
 #> Data is comming from an exponential distribution
@@ -103,15 +105,15 @@ expparetotest(x,0.05)
 #> [1] 0.5
 x<-rexp(1000,0.1)
 1/mean(x)
-#> [1] 0.09823991
+#> [1] 0.1033969
 sigmaalphaLREP(x,10^-12)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 17256.29 1696.253              0
+#> [1,] 294.6836 31.46867      0.9865324
 expparetotest(x,0.05)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 17256.29 1696.253              0
+#> [1,] 294.6836 31.46867      0.9865324
 #> Critical value: 2.446109 
-#> Deviance statistic: 0 
+#> Deviance statistic: 0.9865324 
 #> Data is comming from an exponential distribution
 ##asymptotic p-value
 1/2*(1-pchisq(1.596044,df=1))
@@ -127,12 +129,12 @@ pareto.generation<- function(s,a,n)
 x<-pareto.generation(10,7,1000)
 sigmaalphaLREP(x,10^-12)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 8.668065 6.157946       29.34649
+#> [1,] 8.074564 5.911077       26.49304
 expparetotest(x,0.05)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 8.668065 6.157946       29.34649
+#> [1,] 8.074564 5.911077       26.49304
 #> Critical value: 2.446109 
-#> Deviance statistic: 29.34649 
+#> Deviance statistic: 26.49304 
 #> Data is comming from Pareto distribution
 ##asymptotic p-value
 1/2*(1-pchisq(14.43144,df=1))
