@@ -4,3 +4,4 @@
 ^NEWS\.md$
 ^\.github$
 ^\.travis\.yml$
+^cran-comments\.md$

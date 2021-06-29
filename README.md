@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/jiqiaingwu/LREP/workflows/R-CMD-check/badge.svg)](https://github.com/jiqiaingwu/LREP/actions)
+[![Travis build
+status](https://travis-ci.com/jiqiaingwu/LREP.svg?branch=main)](https://travis-ci.com/jiqiaingwu/LREP)
 <!-- badges: end -->
 
 The goal of LREP is to estimate the Parameters for the Pareto
@@ -90,13 +92,13 @@ library(LREP)
 ####################################
 x<-rexp(1000,0.000000000005)
 1/mean(x)
-#> [1] 5.019239e-12
+#> [1] 4.823063e-12
 sigmaalphaLREP(x,10^-12)
-#>        s.hat      a.hat log.like.ratio
-#> [1,] 2899527 0.09519148              0
+#>        s.hat     a.hat log.like.ratio
+#> [1,] 6990239 0.1031311              0
 expparetotest(x,0.05)
-#>        s.hat      a.hat log.like.ratio
-#> [1,] 2899527 0.09519148              0
+#>        s.hat     a.hat log.like.ratio
+#> [1,] 6990239 0.1031311              0
 #> Critical value: 2.446109 
 #> Deviance statistic: 0 
 #> Data is comming from an exponential distribution
@@ -105,13 +107,13 @@ expparetotest(x,0.05)
 #> [1] 0.5
 x<-rexp(1000,0.1)
 1/mean(x)
-#> [1] 0.1028158
+#> [1] 0.09671586
 sigmaalphaLREP(x,10^-12)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 14194.11 1460.378              0
+#> [1,] 12495.04 1209.401              0
 expparetotest(x,0.05)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 14194.11 1460.378              0
+#> [1,] 12495.04 1209.401              0
 #> Critical value: 2.446109 
 #> Deviance statistic: 0 
 #> Data is comming from an exponential distribution
@@ -128,13 +130,13 @@ pareto.generation<- function(s,a,n)
 }
 x<-pareto.generation(10,7,1000)
 sigmaalphaLREP(x,10^-12)
-#>         s.hat   a.hat log.like.ratio
-#> [1,] 8.278424 6.00144       38.21259
+#>         s.hat    a.hat log.like.ratio
+#> [1,] 7.907241 5.538718       35.65127
 expparetotest(x,0.05)
-#>         s.hat   a.hat log.like.ratio
-#> [1,] 8.278424 6.00144       38.21259
+#>         s.hat    a.hat log.like.ratio
+#> [1,] 7.907241 5.538718       35.65127
 #> Critical value: 2.446109 
-#> Deviance statistic: 38.21259 
+#> Deviance statistic: 35.65127 
 #> Data is comming from Pareto distribution
 ##asymptotic p-value
 1/2*(1-pchisq(14.43144,df=1))
