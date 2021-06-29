@@ -92,13 +92,13 @@ library(LREP)
 ####################################
 x<-rexp(1000,0.000000000005)
 1/mean(x)
-#> [1] 5.296574e-12
+#> [1] 5.110435e-12
 sigmaalphaLREP(x,10^-12)
 #>         s.hat     a.hat log.like.ratio
-#> [1,] 31611850 0.1234275              0
+#> [1,] 32117491 0.1232811              0
 expparetotest(x,0.05)
 #>         s.hat     a.hat log.like.ratio
-#> [1,] 31611850 0.1234275              0
+#> [1,] 32117491 0.1232811              0
 #> Critical value: 2.446109 
 #> Deviance statistic: 0 
 #> Data is comming from an exponential distribution
@@ -107,15 +107,15 @@ expparetotest(x,0.05)
 #> [1] 0.5
 x<-rexp(1000,0.1)
 1/mean(x)
-#> [1] 0.09468076
+#> [1] 0.0998123
 sigmaalphaLREP(x,10^-12)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 1125.755 107.5874     0.08838046
+#> [1,] 11260.69 1124.955   0.0008769159
 expparetotest(x,0.05)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 1125.755 107.5874     0.08838046
+#> [1,] 11260.69 1124.955   0.0008769159
 #> Critical value: 2.446109 
-#> Deviance statistic: 0.08838046 
+#> Deviance statistic: 0.0008769159 
 #> Data is comming from an exponential distribution
 ##asymptotic p-value
 1/2*(1-pchisq(1.596044,df=1))
@@ -130,13 +130,13 @@ pareto.generation<- function(s,a,n)
 }
 x<-pareto.generation(10,7,1000)
 sigmaalphaLREP(x,10^-12)
-#>         s.hat    a.hat log.like.ratio
-#> [1,] 12.03615 8.456771       14.75581
+#>         s.hat  a.hat log.like.ratio
+#> [1,] 14.23286 8.5751       13.76893
 expparetotest(x,0.05)
-#>         s.hat    a.hat log.like.ratio
-#> [1,] 12.03615 8.456771       14.75581
+#>         s.hat  a.hat log.like.ratio
+#> [1,] 14.23286 8.5751       13.76893
 #> Critical value: 2.446109 
-#> Deviance statistic: 14.75581 
+#> Deviance statistic: 13.76893 
 #> Data is comming from Pareto distribution
 ##asymptotic p-value
 1/2*(1-pchisq(14.43144,df=1))
