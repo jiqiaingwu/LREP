@@ -17,8 +17,6 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/jiqiaingwu/LREP/workflows/R-CMD-check/badge.svg)](https://github.com/jiqiaingwu/LREP/actions)
-[![Build Status](https://travis-ci.org/jiqiaingwu/LREP.svg?branch=main)](https://travis-ci.org/jiqiaingwu/LREP)
-[![Build Status](https://travis-ci.org/jiqiaingwu/LREP.svg?branch=main)](https://travis-ci.org/jiqiaingwu/LREP)
 <!-- badges: end -->
 
 The goal of LREP is to estimate the Parameters for the Pareto Distribution and test Pareto vs. Exponential Distributions
