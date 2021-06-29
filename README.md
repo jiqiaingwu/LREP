@@ -76,7 +76,7 @@ different sample sizes and for the limiting case. The percentiles for
 finite sample sizes were computed via Monte Carlo simulation with 10,000
 samples of a given size from the exponential distribution (Table below).
 
-![Table 1](man/figures/Table1.PNG)
+![Table 1](man/figures/Table1.png)
 
 ## Example
 
@@ -88,13 +88,13 @@ library(LREP)
 ####################################
 x<-rexp(1000,0.000000000005)
 1/mean(x)
-#> [1] 4.770058e-12
+#> [1] 5.244254e-12
 sigmaalphaLREP(x,10^-12)
-#>         s.hat    a.hat log.like.ratio
-#> [1,] 54609691 0.130354              0
+#>         s.hat     a.hat log.like.ratio
+#> [1,] 17535662 0.1148668              0
 expparetotest(x,0.05)
-#>         s.hat    a.hat log.like.ratio
-#> [1,] 54609691 0.130354              0
+#>         s.hat     a.hat log.like.ratio
+#> [1,] 17535662 0.1148668              0
 #> Critical value: 2.446109 
 #> Deviance statistic: 0 
 #> Data is comming from an exponential distribution
@@ -103,15 +103,15 @@ expparetotest(x,0.05)
 #> [1] 0.5
 x<-rexp(1000,0.1)
 1/mean(x)
-#> [1] 0.100799
+#> [1] 0.09823991
 sigmaalphaLREP(x,10^-12)
-#>         s.hat   a.hat log.like.ratio
-#> [1,] 2018.377 204.451     0.02923949
+#>         s.hat    a.hat log.like.ratio
+#> [1,] 17256.29 1696.253              0
 expparetotest(x,0.05)
-#>         s.hat   a.hat log.like.ratio
-#> [1,] 2018.377 204.451     0.02923949
+#>         s.hat    a.hat log.like.ratio
+#> [1,] 17256.29 1696.253              0
 #> Critical value: 2.446109 
-#> Deviance statistic: 0.02923949 
+#> Deviance statistic: 0 
 #> Data is comming from an exponential distribution
 ##asymptotic p-value
 1/2*(1-pchisq(1.596044,df=1))
@@ -127,12 +127,12 @@ pareto.generation<- function(s,a,n)
 x<-pareto.generation(10,7,1000)
 sigmaalphaLREP(x,10^-12)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 7.909453 5.773501       35.46561
+#> [1,] 8.668065 6.157946       29.34649
 expparetotest(x,0.05)
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 7.909453 5.773501       35.46561
+#> [1,] 8.668065 6.157946       29.34649
 #> Critical value: 2.446109 
-#> Deviance statistic: 35.46561 
+#> Deviance statistic: 29.34649 
 #> Data is comming from Pareto distribution
 ##asymptotic p-value
 1/2*(1-pchisq(14.43144,df=1))

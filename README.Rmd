@@ -53,7 +53,7 @@ We use a Pareto distribution with the survival function ![Image of Formula 1](ht
 
 The ![Image of Equation 4](https://latex.codecogs.com/svg.image?(1%20-%20%5Cgamma)100) percentiles of L provide the critical numbers for our test on the significance level ![Image of Equation 5](https://latex.codecogs.com/svg.image?%5Cgamma%20). The test is one-sided and we reject the null hypothesis if the computed value of the test statistic exceeds the critical number. We have computed some common percentiles for the distribution of L under the null hypothesis for different sample sizes and for the limiting case. The percentiles for finite sample sizes were computed via Monte Carlo simulation with 10,000 samples of a given size from the exponential distribution (Table below).
 
-![Table 1](man/figures/Table1.PNG)
+![Table 1](man/figures/Table1.png)
 
 
 ## Example
