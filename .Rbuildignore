@@ -5,3 +5,4 @@
 ^\.github$
 ^\.travis\.yml$
 ^cran-comments\.md$
+^LICENSE\.md$
