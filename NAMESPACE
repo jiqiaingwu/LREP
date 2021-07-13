@@ -2,4 +2,4 @@
 
 export(expparetotest)
 export(sigmaalphaLREP)
-importFrom(stats,optimize)
+importFrom("stats", "optimize")
