@@ -2,6 +2,7 @@
 #'
 #' @param x Import Raw data
 #' @param tolerance Tolerance quantity
+#' @importFrom ("stats", "optimize")
 #' @return Output estimate of s, estimate of alpha, and value of the statistic L.
 #' @examples
 #' x<-rexp(1000,0.1)
