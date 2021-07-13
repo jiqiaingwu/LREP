@@ -4,7 +4,7 @@
 \name{LREP-package}
 \alias{LREP}
 \alias{LREP-package}
-\title{LREP: Estimation of Parameters for the Exponential Distribution and Testing Exponential vs. Pareto Distributions}
+\title{LREP: Estimate and Test Exponential vs. Pareto Distributions}
 \description{
 The programs were developed for estimation of parameters and testing exponential versus Pareto distribution during our work on hydrologic extremes.
 }
@@ -17,7 +17,6 @@ The programs were developed for estimation of parameters and testing exponential
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/jiqiaingwu/LREP}
   \item Report bugs at \url{https://github.com/jiqiaingwu/LREP/issues}
 }
 

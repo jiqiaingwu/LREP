@@ -92,31 +92,29 @@ library(LREP)
 ####################################
 x<-rexp(1000,0.000000000005)
 1/mean(x)
-#> [1] 4.823063e-12
-sigmaalphaLREP(x,10^-12)
-#>        s.hat     a.hat log.like.ratio
-#> [1,] 6990239 0.1031311              0
-expparetotest(x,0.05)
-#>        s.hat     a.hat log.like.ratio
-#> [1,] 6990239 0.1031311              0
-#> Critical value: 2.446109 
-#> Deviance statistic: 0 
-#> Data is comming from an exponential distribution
+#> [1] 4.793131e-12
+print(sigmaalphaLREP(x,10^-12))
+#>         s.hat     a.hat log.like.ratio
+#> [1,] 53706554 0.1300092              0
+print(expparetotest(x,0.05))
+#>      critical           statistic
+#> [1,] "2.44610889355019" "0"      
+#>      info                                                 
+#> [1,] "Data is comming from an exponential distribution \n"
 ##asymptotic p-value
 1/2*(1-pchisq(0,df=1))
 #> [1] 0.5
 x<-rexp(1000,0.1)
 1/mean(x)
-#> [1] 0.09671586
-sigmaalphaLREP(x,10^-12)
+#> [1] 0.09905136
+print(sigmaalphaLREP(x,10^-12))
 #>         s.hat    a.hat log.like.ratio
-#> [1,] 12495.04 1209.401              0
-expparetotest(x,0.05)
-#>         s.hat    a.hat log.like.ratio
-#> [1,] 12495.04 1209.401              0
-#> Critical value: 2.446109 
-#> Deviance statistic: 0 
-#> Data is comming from an exponential distribution
+#> [1,] 13081.96 1296.781              0
+print(expparetotest(x,0.05))
+#>      critical           statistic
+#> [1,] "2.44610889355019" "0"      
+#>      info                                                 
+#> [1,] "Data is comming from an exponential distribution \n"
 ##asymptotic p-value
 1/2*(1-pchisq(1.596044,df=1))
 #> [1] 0.1032324
@@ -129,15 +127,14 @@ pareto.generation<- function(s,a,n)
     x
 }
 x<-pareto.generation(10,7,1000)
-sigmaalphaLREP(x,10^-12)
-#>         s.hat    a.hat log.like.ratio
-#> [1,] 7.907241 5.538718       35.65127
-expparetotest(x,0.05)
-#>         s.hat    a.hat log.like.ratio
-#> [1,] 7.907241 5.538718       35.65127
-#> Critical value: 2.446109 
-#> Deviance statistic: 35.65127 
-#> Data is comming from Pareto distribution
+print(sigmaalphaLREP(x,10^-12))
+#>         s.hat   a.hat log.like.ratio
+#> [1,] 8.899638 6.61621       19.66083
+print(expparetotest(x,0.05))
+#>      critical           statistic         
+#> [1,] "2.44610889355019" "19.6608276205241"
+#>      info                                         
+#> [1,] "Data is comming from Pareto distribution \n"
 ##asymptotic p-value
 1/2*(1-pchisq(14.43144,df=1))
 #> [1] 7.267762e-05

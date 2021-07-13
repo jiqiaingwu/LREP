@@ -19,5 +19,5 @@ This program takes your data and the significance level as input and returns the
 }
 \examples{
 x<-rexp(1000,0.1)
-expparetotest(x,0.05)
+print(expparetotest(x,0.05))
 }
