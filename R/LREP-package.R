@@ -4,7 +4,7 @@
 #' \item Panorska, A.K., A. Gershunov, and T.J. Kozubowski (2007). From diversity to volatility: Probability of daily precipitation and extremes. Nonlinear Dynamics in Geosciences (A. Tsonis and J. Elsner, Eds.), Springer, New York, pp 465-484.
 #' }
 #' @docType package
-#' @keywords internal
+#' @name LREP-package
 "_PACKAGE"
 
 NULL
