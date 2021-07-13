@@ -68,14 +68,14 @@ library(LREP)
 ####################################
 x<-rexp(1000,0.000000000005)
 1/mean(x)
-sigmaalphaLREP(x,10^-12)
-expparetotest(x,0.05)
+print(sigmaalphaLREP(x,10^-12))
+print(expparetotest(x,0.05))
 ##asymptotic p-value
 1/2*(1-pchisq(0,df=1))
 x<-rexp(1000,0.1)
 1/mean(x)
-sigmaalphaLREP(x,10^-12)
-expparetotest(x,0.05)
+print(sigmaalphaLREP(x,10^-12))
+print(expparetotest(x,0.05))
 ##asymptotic p-value
 1/2*(1-pchisq(1.596044,df=1))
 ###example when data is Pareto
@@ -87,8 +87,8 @@ pareto.generation<- function(s,a,n)
 	x
 }
 x<-pareto.generation(10,7,1000)
-sigmaalphaLREP(x,10^-12)
-expparetotest(x,0.05)
+print(sigmaalphaLREP(x,10^-12))
+print(expparetotest(x,0.05))
 ##asymptotic p-value
 1/2*(1-pchisq(14.43144,df=1))
 ```

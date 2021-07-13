@@ -6,7 +6,7 @@
 #' @return Output estimate of s, estimate of alpha, and value of the statistic L.
 #' @examples
 #' x<-rexp(1000,0.1)
-#' sigmaalphaLREP(x,10^-12)
+#' print(sigmaalphaLREP(x,10^-12))
 #' @export
 sigmaalphaLREP<-function(x,tolerance)
 {
@@ -40,5 +40,4 @@ sigmaalphaLREP<-function(x,tolerance)
   log.like.ratio <- ln.exp.likel-denom
   log.like.ratio<-log.like.ratio*n*(-2)
   result<-cbind(s.hat,a.hat,log.like.ratio)
-  print(result)
 }

@@ -5,7 +5,7 @@
 #' @return Output the critical number for the test, the value of the -2L (deviance) statistic and the decision (Pareto or exponential) .
 #' @examples
 #' x<-rexp(1000,0.1)
-#' expparetotest(x,0.05)
+#' print(expparetotest(x,0.05))
 #' @export
 expparetotest<-function(x,alpha)
 {
@@ -36,8 +36,9 @@ expparetotest<-function(x,alpha)
             C=6.634897 }
   critical<-(a1/(n+a2*log(n))^a3+C)
   statistic<-sigmaalphaLREP(x,10^-12)[3]
-  cat("Critical value:",critical, "\n")
-  cat("Deviance statistic:",statistic, "\n")
-  if (statistic<critical) cat("Data is comming from an exponential distribution \n")
-  else cat("Data is comming from Pareto distribution \n")
+  # cat("Critical value:",critical, "\n")
+  # cat("Deviance statistic:",statistic, "\n")
+  if (statistic<critical) {info<-"Data is comming from an exponential distribution \n"}
+  else {info<-"Data is comming from Pareto distribution \n"}
+  result<-cbind(critical,statistic,info)
 }

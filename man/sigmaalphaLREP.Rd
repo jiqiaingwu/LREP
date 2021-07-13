@@ -19,5 +19,5 @@ The program will take your data as input and return three numbers as output: est
 }
 \examples{
 x<-rexp(1000,0.1)
-sigmaalphaLREP(x,10^-12)
+print(sigmaalphaLREP(x,10^-12))
 }
