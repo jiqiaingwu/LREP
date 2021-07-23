@@ -141,12 +141,11 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='va'>x</span><span class='op'>&lt;-</span><span class='fu'><a href='https://rdrr.io/r/stats/Exponential.html'>rexp</a></span><span class='op'>(</span><span class='fl'>1000</span>,<span class='fl'>0.1</span><span class='op'>)</span>
-<span class='fu'>expparetotest</span><span class='op'>(</span><span class='va'>x</span>,<span class='fl'>0.05</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;        s.hat    a.hat log.like.ratio
-#&gt; [1,] 2074.59 225.7758      0.0237171
-#&gt; Critical value: 2.446109 
-#&gt; Deviance statistic: 0.0237171 
-#&gt; Data is comming from an exponential distribution </div></pre>
+<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>expparetotest</span><span class='op'>(</span><span class='va'>x</span>,<span class='fl'>0.05</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;      critical           statistic           
+#&gt; [1,] "2.44610889355019" "0.0237170951749022"
+#&gt;      info                                                 
+#&gt; [1,] "Data is comming from an exponential distribution \n"</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
