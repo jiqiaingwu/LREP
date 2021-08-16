@@ -6,7 +6,10 @@
 \alias{LREP-package}
 \title{LREP: Estimate and Test Exponential vs. Pareto Distributions}
 \description{
-The programs were developed for estimation of parameters and testing exponential versus Pareto distribution during our work on hydrologic extremes.
+The programs were developed for estimation of parameters and testing exponential versus Pareto distribution during our work on hydrologic extremes. See Kozubowski, T.J., A.K. Panorska, F. Qeadan, and A. Gershunov (2007) <doi:10.1080/03610910802439121>, and Panorska, A.K., A. Gershunov, and T.J. Kozubowski (2007) <doi:10.1007/978-0-387-34918-3_26>.
+}
+\details{
+We consider the problem of maximum likelihood estimation of the parameters of the Pareto Type II (Lomax) distribution. We show that in certain parametrization and after modification of the parameter space to include exponential distribution as a special case, the MLEs of parameters always exist. Moreover, the MLEs have a non standard asymptotic distribution in the exponential case due to the lack of regularity. Further, we develop a likelihood ratio test for exponentiality versus Pareto II distribution.
 }
 \references{
 \enumerate{

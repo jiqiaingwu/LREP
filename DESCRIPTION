@@ -1,7 +1,7 @@
 Package: LREP
 Type: Package
 Title: Estimate and Test Exponential vs. Pareto Distributions
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
         person("Fares", "Qeadan", email = "fares.qeadan@utah.edu",
                   role = "aut"),

@@ -2,7 +2,10 @@
 #'
 #' @param x Import Raw data
 #' @param alpha Significance level. Note: this program works only for the following significance levels: 0.10, 0.075, 0.05, 0.025, 0.01 and 0.005.
-#' @return Output the critical number for the test, the value of the -2L (deviance) statistic and the decision (Pareto or exponential) .
+#' @return Output the critical number for the test, the value of the -2L (deviance) statistic and the decision (Pareto or exponential).
+#' @field critical Critical value
+#' @field statistic Deviance statistic
+#' @field info Interpret the data is coming from an exponential distribution or Pareto distribution.
 #' @examples
 #' x<-rexp(1000,0.1)
 #' print(expparetotest(x,0.05))
@@ -38,7 +41,7 @@ expparetotest<-function(x,alpha)
   statistic<-sigmaalphaLREP(x,10^-12)[3]
   # cat("Critical value:",critical, "\n")
   # cat("Deviance statistic:",statistic, "\n")
-  if (statistic<critical) {info<-"Data is comming from an exponential distribution \n"}
-  else {info<-"Data is comming from Pareto distribution \n"}
+  if (statistic<critical) {info<-"Data is coming from an exponential distribution \n"}
+  else {info<-"Data is coming from Pareto distribution \n"}
   result<-cbind(critical,statistic,info)
 }
