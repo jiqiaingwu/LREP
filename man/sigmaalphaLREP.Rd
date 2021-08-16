@@ -12,11 +12,21 @@ sigmaalphaLREP(x, tolerance)
 \item{tolerance}{Tolerance quantity}
 }
 \value{
-Output estimate of s, estimate of alpha, and value of the statistic L.
+Output three estimates by using maximum likelihood method
 }
 \description{
 The program will take your data as input and return three numbers as output: estimate of s, estimate of alpha, and value of the statistic L.
 }
+\section{Fields}{
+
+\describe{
+\item{\code{s.hat}}{Output estimate of s}
+
+\item{\code{a.hat}}{estimate of alpha}
+
+\item{\code{log.like.ratio}}{value of the statistic L}
+}}
+
 \examples{
 x<-rexp(1000,0.1)
 print(sigmaalphaLREP(x,10^-12))

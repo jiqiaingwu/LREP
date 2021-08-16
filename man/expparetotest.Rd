@@ -12,11 +12,21 @@ expparetotest(x, alpha)
 \item{alpha}{Significance level. Note: this program works only for the following significance levels: 0.10, 0.075, 0.05, 0.025, 0.01 and 0.005.}
 }
 \value{
-Output the critical number for the test, the value of the -2L (deviance) statistic and the decision (Pareto or exponential) .
+Output the critical number for the test, the value of the -2L (deviance) statistic and the decision (Pareto or exponential).
 }
 \description{
 This program takes your data and the significance level as input and returns the critical number for the test, the value of the -2L (deviance) statistic and the decision (Pareto or exponential) as output.
 }
+\section{Fields}{
+
+\describe{
+\item{\code{critical}}{Critical value}
+
+\item{\code{statistic}}{Deviance statistic}
+
+\item{\code{info}}{Interpret the data is coming from an exponential distribution or Pareto distribution.}
+}}
+
 \examples{
 x<-rexp(1000,0.1)
 print(expparetotest(x,0.05))

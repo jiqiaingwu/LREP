@@ -3,7 +3,10 @@
 #' @param x Import Raw data
 #' @param tolerance Tolerance quantity
 #' @importFrom ("stats", "optimize")
-#' @return Output estimate of s, estimate of alpha, and value of the statistic L.
+#' @return Output three estimates by using maximum likelihood method
+#' @field s.hat Output estimate of s
+#' @field a.hat estimate of alpha
+#' @field log.like.ratio value of the statistic L
 #' @examples
 #' x<-rexp(1000,0.1)
 #' print(sigmaalphaLREP(x,10^-12))
